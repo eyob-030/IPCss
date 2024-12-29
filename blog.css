@@ -1,0 +1,187 @@
+ /* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+* {
+    background-color: black;
+    color: white;
+}
+/* Navbar Styling */
+.navbar {
+    margin-top: 10px; /* Dark gray background for the navbar */
+    padding: 10px 20px;
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: cyan;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: cyan;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #CCCCCC;
+}
+
+.header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.header .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.article img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid cyan;
+    cursor: pointer;
+}
+
+.article img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly */
+    border-color: white;
+}
+
+.article kbd {
+    background-color: #00FF00;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.article-detail summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #CCCCCC;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer button {
+    background-color: black;
+    color: white;
+    border: 2px solid cyan;
+    padding: 10px 15px;
+    border-radius: 250px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: cyan;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Adjust navbar for smaller screens */
+    .navbar {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar a {
+        display: block; /* Stack links vertically */
+        margin: 10px 0;
+    }
+
+    /* Adjust header for smaller screens */
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    /* Stack article content for smaller screens */
+    .article {
+        padding: 10px;
+    }
+
+    .article img {
+        width: 100%; /* Ensure images fit the container */
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    footer button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust navbar for very small screens */
+    .navbar a {
+        font-size: 12px;
+    }
+
+    /* Further adjust header for small screens */
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .article img {
+        width: 100%; /* Ensure full-width image */
+    }
+
+    footer button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

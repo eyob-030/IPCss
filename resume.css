@@ -1,0 +1,196 @@
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+     
+     
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black; /* Dark background */
+    color: white; /* Light text */
+    
+}
+
+/* Navbar */
+.navbar {
+      margin-top: 10px; /* Dark gray background for the navbar */
+    padding: 10px 20px;
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: cyan;
+}
+
+/* Profile Section */
+.profile {
+    display: flex; /* Use flex for layout */
+    align-items: center; /* Vertically align image and text */
+    justify-content: center; /* Center everything horizontally */
+    gap: 20px; /* Add spacing between the image and text */
+    margin: 20px auto;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100px; /* Smaller image size */
+    height: 100px; /* Keep aspect ratio consistent */
+    border: 2px solid cyan;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly */
+    border-color: white;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center;
+}
+
+/* Resume Details */
+.resume-section {
+    display: flex;
+    flex-wrap: wrap; /* Ensures better responsiveness */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.details, .additional-info {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: cyan;
+    text-decoration: underline;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #CCCCCC;
+    margin-top: 20px;
+}
+
+footer button {
+    background-color: black;
+    color: white;
+    border: 2px solid cyan;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Adjust navbar for smaller screens */
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block; /* Stack links vertically */
+        margin: 10px 0;
+    }
+
+    /* Stack profile section for smaller screens */
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .profile-image {
+        width: 80px; /* Slightly smaller image */
+        height: 80px;
+    }
+
+    /* Stack resume sections and adjust widths */
+    .resume-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .details, .additional-info {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .section ul {
+        font-size: 0.9rem;
+    }
+
+    footer button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust navbar for very small screens */
+    .navbar a {
+        font-size: 12px;
+    }
+
+    /* Profile image and text adjustments for very small screens */
+    .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .resume-section {
+        padding: 8px;
+    }
+
+    .details, .additional-info {
+        width: 100%;
+    }
+
+    footer button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

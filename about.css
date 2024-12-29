@@ -1,0 +1,174 @@
+ /* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+* {
+    background-color: black;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    margin-top: 10px; /* Dark gray background for the navbar */
+    padding: 10px 20px;
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: cyan;
+}
+
+/* About Section Styling */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #22;
+    border-radius: 10px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.text-content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-content hr {
+    color: cyan;
+    cursor: pointer;
+}
+
+.text-content h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-content p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.image-content:hover {
+    transform: scale(1.1); /* Enlarge the image slightly */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: cyan;
+}
+
+footer button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 250px;
+    border: 2px solid cyan;
+}
+
+footer button:hover {
+    background-color: cyan;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Center navbar items and reduce spacing */
+    .navbar {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar a {
+        display: block; /* Stack links vertically */
+        margin: 10px 0;
+    }
+
+    /* Stack about-container content vertically */
+    .about-container {
+        flex-direction: column;
+    }
+
+    .text-content, .image-content {
+        min-width: 100%; /* Allow sections to take full width */
+    }
+
+    .text-content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .text-content p {
+        text-align: justify; /* Keep justified alignment */
+    }
+
+    .image-content {
+        margin-top: 20px;
+    }
+
+    footer button {
+        font-size: 14px;
+        padding: 8px 12px; /* Adjust button size for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .text-content p {
+        font-size: 14px; /* Reduce text size for readability */
+        text-align: justify; /* Keep justified alignment */
+    }
+
+    footer button {
+        padding: 8px 10px; /* Smaller button for smaller screens */
+        font-size: 12px;
+    }
+
+    .image-content img {
+        width: 120px;
+        height: auto;
+    }
+}
